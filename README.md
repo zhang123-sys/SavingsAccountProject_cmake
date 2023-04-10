@@ -1,5 +1,9 @@
 # Account Management
 
+Modified from Tsinghua University (https://www.xuetangx.com/course/THU08091000248/14767512?channel=i.area.learn_title)
+
+Add cmake to support cross-platform development on Linux and Windows.
+
 ## structure
 
 - ### .h file
