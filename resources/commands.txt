@@ -1,0 +1,23 @@
+a s
+a c
+a s
+c 5
+d 0 5000 salary
+w 1 2000 buy a cell
+c 25
+d 2 10000 sell stock 0323
+n
+d 1 2026 repay the credit
+c 5
+d 0 5500 salary
+n
+c 15
+w 1 1500 buy a television
+w 1 20000 buy a car
+c 32
+w 0 2e4 buy stock
+a s
+d 0 5000 salary
+w 2 2000 buy a cell
+c 5
+c 20

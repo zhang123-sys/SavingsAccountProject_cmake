@@ -1,0 +1,3 @@
+/root/cpp_project/SavingsAccountProject/build/CMakeFiles/rebuild_cache.dir
+/root/cpp_project/SavingsAccountProject/build/CMakeFiles/SavingsAccountProject.dir
+/root/cpp_project/SavingsAccountProject/build/CMakeFiles/edit_cache.dir

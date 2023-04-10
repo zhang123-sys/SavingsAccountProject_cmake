@@ -1,0 +1,288 @@
+1
+/*
+1       #021325302 is created
+1       #58320212x is created
+5       #021325302      5000    5000
+25      #58320212x      10000   10000
+45      #021325302      5500    10500
+60      #58320212x      -4000   6000
+90      #021325302      27.64   10527.6
+90      #58320212x      21.78   6021.78
+#021325302      Balance: 10527.6
+#58320212x      Balance: 6021.78
+Total: 16549.4
+*/
+
+2
+/*
+2022-11-1       #S3755217 created
+2022-11-1       #02342342 created
+2022-11-5       #S3755217       5000    5000    salary
+2022-11-25      #02342342       10000   10000   sell stock 0323
+2022-12-5       #S3755217       5500    10500   salary
+2022-12-20      #02342342       -4000   6000    buy a laptop
+
+2023-1-1        #S3755217       17.82   10517.8 interest
+S3755217        Balance: 10517.8
+2023-1-1        #02342342       13.23   6013.23 interest
+02342342        Balance: 6013.23
+Total: 16531
+*/
+
+3
+/*
+2022-11-1       #S3755217 created
+2022-11-1       #02342342 created
+2022-11-1       #C5392394 created
+2022-11-5       #S3755217       5000    5000    salary
+2022-11-15      #C5392394       -2000   -2000   buy a cell
+2022-11-25      #02342342       10000   10000   sell stock 0323
+2022-12-1       #C5392394       -16     -2016   interest
+2022-12-1       #C5392394       2016    0       repay the credit
+2022-12-5       #S3755217       5500    10500   salary
+2023-1-1        #S3755217       17.82   10517.8 interest
+2023-1-1        #02342342       15.21   10015.2 interest
+2023-1-1        #C5392394       -50     -50     annual fee
+
+S3755217        Balance: 10517.8
+02342342        Balance: 10015.2
+C5392394        Balance: -50    Available credit:9950
+Total: 20483
+*/
+
+4
+/*
+2022-11-1       #S3755217 created
+2022-11-1       #02342342 created
+2022-11-1       #C5392394 created
+2022-11-5       #S3755217       5000    5000    salary
+2022-11-15      #C5392394       -2000   -2000   buy a cell
+2022-11-25      #02342342       10000   10000   sell stock 0323
+2022-12-1       #C5392394       -16     -2016   interest
+2022-12-1       #C5392394       2016    0       repay the credit
+2022-12-5       #S3755217       5500    10500   salary
+2023-1-1        #S3755217       17.82   10517.8 interest
+
+S3755217        Balance: 10517.8
+2023-1-1        #02342342       15.21   10015.2 interest
+
+02342342        Balance: 10015.2
+2023-1-1        #C5392394       -50     -50     annual fee
+
+C5392394        Balance: -50
+Total: 20483
+*/
+
+5
+/*
+2022-11-1       #S3755217 created
+2022-11-1       #02342342 created
+2022-11-1       #C5392394 created
+(d)deposit (w)withdraw (s)show (c)change day (n)next month (e)exit
+2022-11-1       Total: 0        command> c 5
+2022-11-5       Total: 0        command> d 0 5000 salary
+2022-11-5       #S3755217       5000    5000     salary
+2022-11-5       Total: 5000     command> c 15
+2022-11-15      Total: 5000     command> w 2 2000 buy a cell
+2022-11-15      #C5392394       -2000   -2000    buy a cell
+2022-11-15      Total: 3000     command> c 25
+2022-11-25      Total: 3000     command> d 1 10000 sell stock 0323
+2022-11-25      #02342342       10000   10000    sell stock 0323
+2022-11-25      Total: 13000    command> n
+2022-12-1       #C5392394       -16     -2016   interest
+2022-12-1       Total: 12984    command> d 2 2016 repay the credit
+2022-12-1       #C5392394       2016    0        repay the credit
+2022-12-1       Total: 15000    command> c5
+2022-12-5       Total: 15000    command> d 0 5500 salary
+2022-12-5       #S3755217       5500    10500    salary
+2022-12-5       Total: 20500    command> n
+2023-1-1        #S3755217       17.82   10517.8 interest
+2023-1-1        #02342342       15.21   10015.2 interest
+2023-1-1        #C5392394       -50     -50     annual fee
+2023-1-1        Total: 20483    command> s
+[0] S3755217    Balance: 10517.8
+[1] 02342342    Balance: 10015.2
+[2] C5392394    Balance: -50    Available credit:9950
+2023-1-1        Total: 20483    command> e
+*/
+
+6
+/*
+(a)add account (d)deposit (w)withdraw (s)show (c)change day (n)next month (e)exit
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+s
+2022-11-1       #S0 created
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+s
+2022-11-1       #S1 created
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+c
+2022-11-1       #C2 created
+2022-11-1       Total: 0        command> s
+[0] S0  Balance: 0
+[1] S1  Balance: 0
+[2] C2  Balance: 0      Available credit:10000
+2022-11-1       Total: 0        command> c 5
+2022-11-5       Total: 0        command> d 0 5000 salary
+2022-11-5       #S0     5000    5000     salary
+2022-11-5       Total: 5000     command> c 15
+2022-11-15      Total: 5000     command> w 2 2000 buy a cell
+2022-11-15      #C2     -2000   -2000    buy a cell
+2022-11-15      Total: 3000     command> c 25
+2022-11-25      Total: 3000     command> d 1 10000 sell stock 0323
+2022-11-25      #S1     10000   10000    sell stock 0323
+2022-11-25      Total: 13000    command> n
+2022-12-1       #C2     -16     -2016   interest
+2022-12-1       Total: 12984    command> d 2 2016 repay the credit
+2022-12-1       #C2     2016    0        repay the credit
+2022-12-1       Total: 15000    command> c5
+2022-12-5       Total: 15000    command> d 0 5500 salary
+2022-12-5       #S0     5500    10500    salary
+2022-12-5       Total: 20500    command> n
+2023-1-1        #S0     17.82   10517.8 interest
+2023-1-1        #S1     15.21   10015.2 interest
+2023-1-1        #C2     -50     -50     annual fee
+2023-1-1        Total: 20483    command> s
+[0] S0  Balance: 10517.8
+[1] S1  Balance: 10015.2
+[2] C2  Balance: -50    Available credit:9950
+2023-1-1        Total: 20483
+*/
+
+/*
+(a)add account (d)deposit (w)withdraw (s)show (c)change day (n)next month (e)exit
+2022-11-1       Total: 0        command> s
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+s
+2022-11-1       #S0 created
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+c
+2022-11-1       #C1 created
+2022-11-1       Total: 0        command> s
+[0] S0  Balance: 0
+[1] C1  Balance: 0      Available credit:10000
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+s
+2022-11-1       #S2 created
+2022-11-1       Total: 0        command> s
+[0] S0  Balance: 0
+[1] C1  Balance: 0      Available credit:10000
+[2] S2  Balance: 0
+2022-11-1       Total: 0        command> c 5
+2022-11-5       Total: 0        command> d 0 5000 salary
+2022-11-5       #S0     5000    5000     salary
+2022-11-5       Total: 5000     command> c 15
+2022-11-15      Total: 5000     command> w 1 2000 buy a cell
+2022-11-15      #C1     -2000   -2000    buy a cell
+2022-11-15      Total: 3000     command> c 25
+2022-11-25      Total: 3000     command> d 3 10000 sell stock 0323
+*/
+
+/*
+(a)add account (d)deposit (w)withdraw (s)show (c)change day (n)next month (q)query (e)exit
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+s
+2022-11-1       #S0 created
+2022-11-1       Total: 0        command> a
+(s)savingsAccount (c)creditAccount
+c
+2022-11-1       #C1 created
+2022-11-1       Total: 0        command> c 2
+2022-11-2       Total: 0        command> d 0 1000 salary
+2022-11-2       #S0     1000    1000     salary
+2022-11-2       Total: 1000     command> w 1 900 buy a cell
+2022-11-2       #C1     -900    -900     buy a cell
+2022-11-2       Total: 100      command> n
+2022-12-1       #C1     -13.05  -913.05 interest
+2022-12-1       Total: 86.95    command> d 1 913.05 repay the credit
+2022-12-1       #C1     913.05  0        repay the credit
+2022-12-1       Total: 1000     command> c 3
+2022-12-3       Total: 1000     command> w 0 800 buy stock
+2022-12-3       #S0     -800    200      buy stock
+2022-12-3       Total: 200      command> n
+2023-1-1        #S0     1.51    201.51  interest
+2023-1-1        #C1     -50     -50     annual fee
+2023-1-1        Total: 151.51   command> s
+[0] S0  Balance: 201.51
+[1] C1  Balance: -50    Available credit:9950
+2023-1-1        Total: 151.51   command> q 2022-11-1 2022-11-30
+2022-11-2       #S0     1000    1000     salary
+2022-11-2       #C1     -900    -900     buy a cell
+2023-1-1        Total: 151.51   command> q 2022-12-1 2022-12-31
+2022-12-1       #C1     -13.05  -913.05 interest
+2022-12-1       #C1     913.05  0        repay the credit
+2022-12-3       #S0     -800    200      buy stock
+*/
+
+/*
+2022-11-1       #S0 created
+2022-11-1       #C1 created
+2022-11-1       #S2 created
+2022-11-5       #S0     5000    5000     salary
+2022-11-5       #C1     -2000   -2000    buy a cell
+2022-11-25      #S2     10000   10000    sell stock 0323
+2022-12-1       #C1     -26     -2026   interest
+2022-12-1       #C1     2026    0        repay the credit
+2022-12-5       #S0     5500    10500    salary
+2023-1-1        #S0     17.82   10517.8 interest
+2023-1-1        #C1     -50     -50     annual fee
+2023-1-1        #S2     15.21   10015.2 interest
+2023-1-15       #C1     -1500   -1550    buy a television
+(a)add account (d)deposit (w)withdraw (s)show (c)change day (n)next month (q)query (e)exit
+2023-1-15       Total: 18983    command> q 2022-11-5 2022-12-5
+2022-11-5       #S0     5000    5000     salary
+2022-11-5       #C1     -2000   -2000    buy a cell
+2022-11-25      #S2     10000   10000    sell stock 0323
+2022-12-1       #C1     -26     -2026   interest
+2022-12-1       #C1     2026    0        repay the credit
+2022-12-5       #S0     5500    10500    salary
+2023-1-15       Total: 18983    command> q 2022-12-5 2023-1-15
+2022-12-5       #S0     5500    10500    salary
+2023-1-1        #S0     17.82   10517.8 interest
+2023-1-1        #C1     -50     -50     annual fee
+2023-1-1        #S2     15.21   10015.2 interest
+2023-1-15       #C1     -1500   -1550    buy a television
+*/
+
+/*
+2022-11-1       #S0 created
+2022-11-1       #C1 created
+2022-11-1       #S2 created
+2022-11-5       #S0     5000    5000     salary
+2022-11-5       #C1     -2000   -2000    buy a cell
+2022-11-25      #S2     10000   10000    sell stock 0323
+2022-12-1       #C1     -26     -2026   interest
+2022-12-1       #C1     2026    0        repay the credit
+2022-12-5       #S0     5500    10500    salary
+2023-1-1        #S0     17.82   10517.8 interest
+2023-1-1        #C1     -50     -50     annual fee
+2023-1-1        #S2     15.21   10015.2 interest
+2023-1-15       #C1     -1500   -1550    buy a television
+(a)add account (d)deposit (w)withdraw (s)show (c)change day (n)next month (q)query (e)exit
+2023-1-15       Total: 18983    command> w 1 20000 buy a car
+Error(#C1): not enough credit
+2023-1-15       Total: 18983    command> q 2022-12-5 2023-1-35
+Invalid date: 2023-1-35
+Error: Invalid date!
+2023-1-15       Total: 18983    command> q 2022-12-5 2023-1-31
+2022-12-5       #S0     5500    10500    salary
+2023-1-1        #S0     17.82   10517.8 interest
+2023-1-1        #C1     -50     -50     annual fee
+2023-1-1        #S2     15.21   10015.2 interest
+2023-1-15       #C1     -1500   -1550    buy a television
+2023-1-15       Total: 18983    command> c 32
+Invalid day2023-1-15    Total: 18983    command> s
+[0] S0  Balance: 10517.8
+[1] C1  Balance: -1550  Available credit:8450
+[2] S2  Balance: 10015.2
+2023-1-15       Total: 18983    command> w 0 2e4 buy stock
+Error(#S0): not enough money
+2023-1-15       Total: 18983    command>
+*/
